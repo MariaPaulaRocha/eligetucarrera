@@ -17,9 +17,6 @@
 html {
   box-sizing: border-box; }
 
-*, *:before, *:after {
-  box-sizing: inherit; }
-
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -629,7 +626,8 @@ p.big {
     line-height: 32px;
     color: #23262A; }
   #how-items .start {
-    margin-top: 60px; }
+    margin-top: 60px;
+    margin-right: 50px; }
 
 .prices {
   padding: 80px 60px; }
@@ -694,31 +692,34 @@ p.big {
       color: #4C525A !important; }
 
 .price-boxes {
-  margin: 50px 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 80px; }
+  width: 90%;
+  margin: 0 auto;
+  display: block; }
   .price-boxes .price-box {
     background: #FFFFFF;
     border: 1px solid rgba(200, 200, 200, 0.21);
     box-sizing: border-box;
     box-shadow: 0px 3px 10px rgba(70, 70, 70, 0.18);
     border-radius: 8px;
-    padding: 20px; }
+    padding: 20px;
+    display: inline-block;
+    width: calc(33% - 20px);
+    margin-right: 20px; }
     .price-boxes .price-box h4 {
       font-style: normal;
       font-weight: normal;
       font-size: 25px;
       line-height: normal;
       text-align: center;
-      position: relative; }
+      position: relative;
+      margin: 0px; }
       .price-boxes .price-box h4:after {
         position: absolute;
         content: '';
         width: 50%;
         border: 1px solid #C04BAB;
         left: 25%;
-        bottom: -20px; }
+        bottom: -15px; }
       .price-boxes .price-box h4.blue {
         color: #70CFEE; }
         .price-boxes .price-box h4.blue:after {
@@ -727,5 +728,21 @@ p.big {
         color: #F2C94C; }
         .price-boxes .price-box h4.pro:after {
           border: 1px solid #F2C94C; }
+    .price-boxes .price-box p {
+      max-width: 100%;
+      width: 100%; }
+    .price-boxes .price-box ul {
+      padding-top: 15px; }
+      .price-boxes .price-box ul li {
+        max-width: 100%;
+        width: 100%; }
+        .price-boxes .price-box ul li p {
+          font-size: 14px;
+          line-height: 20px;
+          color: #4C525A;
+          max-width: 100%;
+          width: 100%; }
+    .price-boxes .price-box:last-of-type {
+      margin-right: 0px; }
 
 /*# sourceMappingURL=app.css.map */

@@ -53,10 +53,9 @@
 }
 
 .price-boxes {
-	margin: 50px 50px;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 80px;
+	width: 90%;
+    margin: 0 auto;
+    display: block;
 
 	.price-box {
 		background: #FFFFFF;
@@ -66,6 +65,11 @@
 		border-radius: 8px;
 		padding: 20px;
 
+		display: inline-block;
+
+		width: calc(33% - 20px);
+		margin-right: 20px;
+
 		h4 {
 			font-style: normal;
 			font-weight: normal;
@@ -74,6 +78,7 @@
 			text-align: center;
 
 			position: relative;
+			margin: 0px;
 
 			&:after {
 				position: absolute;
@@ -83,7 +88,7 @@
 				border: 1px solid #C04BAB;
 
 				left: 25%;
-    			bottom: -20px;
+    			bottom: -15px;
 			}
 
 			&.blue {
@@ -104,10 +109,30 @@
 
 		}
 
+		p {
+			max-width: 100%;
+			width: 100%;
+
+		}
+
 		ul	{
+			padding-top: 15px; 
 			li {
-				
+				max-width: 100%;
+				width: 100%;
+				p {
+					font-size: 14px;
+					line-height: 20px;
+					color: #4C525A;
+					max-width: 100%;
+					width: 100%;
+				}
+
 			}
+		}
+
+		&:last-of-type {
+			margin-right: 0px;
 		}
 	}
 
