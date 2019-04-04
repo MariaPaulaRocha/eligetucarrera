@@ -1,0 +1,110 @@
+.hold {
+  background-image: url("../images/hold.jpg");
+  background-size: cover;
+  padding: 120px 60px;
+  padding-top: 180px;
+
+  h1 {
+    font-weight: normal;
+    line-height: 50px;
+    font-size: 50px;
+    color: #0D284D;
+    width: 50%;
+  }
+
+  p {
+    font-family: 'Scope One', serif;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 34px;
+    color: #23262A;
+    width: 50%;
+  }
+}
+
+
+.how {
+	background-image: url("../images/how_bg.png");
+    background-size: 64%;
+    padding: 80px 0;
+    background-repeat: no-repeat;
+    background-position: -38px -91px;
+
+	img {
+		max-width: 450px;
+	}
+
+	h3 {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		line-height: normal;
+
+		color: #23262A;
+
+		span {
+			color: #97989C;
+		}
+	}
+
+	p {
+		font-style: normal;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 32px;
+	}
+}
+
+#how-items {
+	background: rgba(249, 249, 249, 0.65);
+	margin: 0;
+	padding: 80px 60px;
+
+	h2 {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 36px;
+		line-height: normal;
+
+		color: #23262A;
+	}
+
+	p {
+		font-style: normal;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 32px;
+
+		color: #23262A;
+	}
+
+	.start {
+		margin-top: 60px;
+	}
+}
+
+.prices {
+	padding: 80px 60px;
+
+
+	h2 {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 36px;
+		line-height: normal;
+
+		color: #23262A;
+	}
+
+	p {
+		font-style: normal;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 32px;
+
+		color: #23262A;
+
+		width: 633px;
+	}
+
+}

@@ -1,0 +1,63 @@
+/*###########################################################################
+# BUTTONS
+#############################################################################*/
+// NOTE: Disabled button must always be at the end of the cascade
+
+
+// Button Base
+.button-base {
+  @include transition(all 0.5s ease-out 0s);
+  display: inline-block;
+  border-radius: 8px;
+  padding: 10px 15px;
+  text-align: center;
+  line-height: 1.6;
+  outline: none;
+  color: #f4f4f4;
+  font-size: 15px;
+
+  &:focus,
+  &:hover,
+  &:active {
+    @include box-shadow(0 5px 12px 0 rgba(44, 62, 80, 0.2));
+    text-decoration: none;
+    color: #fff;
+  }
+
+  svg {
+    vertical-align: text-top;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+  }
+}
+
+@mixin button-base-properties($color) {
+  border: 1px solid $color;
+  background-color: $color;
+}
+
+button,
+input[type="submit"] {
+  @extend .button-base;
+}
+
+// Button Primary
+.button-primary {
+  @extend .button-base;
+  @include button-base-properties($primary-normal-purple);
+}
+
+// Button Primary Flat
+.button-primary-flat {
+  @extend .button-base;
+  color: $primary-dark-blue;
+  border: 1px solid #a5adba;
+  background-color: transparent;
+
+  &:hover {
+    border: 1px solid $primary-dark-blue;
+    color: $primary-dark-blue;
+  }
+}
+
