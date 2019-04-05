@@ -86,7 +86,7 @@
 
 .prices {
 	padding: 80px 60px;
-
+	position: relative;
 
 	h2 {
 		font-style: normal;
@@ -108,4 +108,85 @@
 		width: 633px;
 	}
 
+	&:before {
+		position: absolute;
+		content: '';
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: #C2EBED;
+	    width: 100%;
+    	z-index: -1;
+    	height: 250px;
+	}
+
+}
+
+#contact {
+	padding: 50px 50px 70px;
+	text-align: center;
+
+	h5	{
+		font-style: normal;
+		font-weight: 600;
+		font-size: 19px;
+		line-height: normal;
+
+		color: #000000;
+		margin-bottom: 60px;
+		position: relative;
+
+		&:after {
+				position: absolute;
+				content: '';
+				width: 6%;
+
+				border: 1px solid #C04BAB;
+
+				left: 47%;
+    			bottom: -10px;
+			}
+	}
+
+	p {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: normal;
+		color: #000000;
+
+		a {
+			font-size: 20px;
+			font-weight: normal;
+			img {
+				max-width: 30px;
+				width: 30px;
+				vertical-align: middle;
+    			margin-top: -3px;
+			}
+		}
+
+	}
+
+	img.net {
+		margin-top: 50px;
+		max-width: 350px;
+	}
+
+
+}
+
+.footer-img {
+	max-width: 100%;
+}
+
+footer {
+	height: 213px;
+	@include display-flex;
+	@include align-items(center);
+	@include justify-content(space-between);
+	background-color: #4C525A;
+	padding: 0 60px;
+
+	color: #fff;
 }

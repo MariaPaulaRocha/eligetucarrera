@@ -12,10 +12,9 @@
         <img src="images/logo.svg">
       </div>
       <ul class="navbar-right-links">
-        <li><a href="#how-items">Cómo lo hacemos</a></li>
-        <li><a href="#programs">Programas</a></li>      
-        <li><a href="#contact">Contacto</a></li>
-        <li>+57 301 365 89 27</li>
+        <li><a href="#how-items" class="scroll">Cómo lo hacemos</a></li>
+        <li><a href="#programs" class="scroll">Programas</a></li>      
+        <li><a href="#contact" class="scroll">Contacto</a></li>
       </ul>
     </div>
   </nav>
@@ -25,7 +24,7 @@
     <p class="big">
       Elige tu carrera, te ofrece servicios de asesoría en orientación vocacional para que tomes la mejor decisión.
     </p>
-    <a class='button-primary' href="#how">Descubre como</a>
+    <a class='button-primary scroll' href="#how">Descubre como</a>
   </section>
 
   <section id='how' class="section-wrapper how">
@@ -102,8 +101,8 @@
         <ul>
           <li><p>Programa de 5 a 6 sesiones: Entrevista, aplicación de pruebas intereses y aptitutes vocacionales, entre otras actividades.</p></li>
           <li><p>Servicios adicionales</p></li>
-          
         </ul>
+        <a class='button-primary blue' href="">Elegir plan</a>
       </div>
 
       <div class="price-box">
@@ -113,19 +112,56 @@
           <li><p>Experiencias de campo</p></li>
           <li><p>Servicios adicionales</p></li>
         </ul>
+        <a class='button-primary' href="">Elegir plan</a>
       </div>
 
       <div class="price-box">
         <h4 class="pro">POV Masivo</h4>
-        <p>Programa de 5 sesiones:</p>
+        <p class="description">Programa de 5 sesiones:</p>
         <ul>
           <li><p>Aplicación de pruebas de intereses y aptitudes vocacionales.</p></li>
           <li><p>Experiencias de campo y actividades dinámicas.</p></li>
           <li><p>Charlas informativas con profesionales.</p></li>
         </ul>
+        <a class='button-primary pro' href="">Elegir plan</a>
       </div>
     </div>
   </section>
+
+  <section id="contact">
+    <h5>Contáctanos</h5>
+    <p>eligetucarreraco@gmail.com</p>
+    <p><a href="https://api.whatsapp.com/send?phone=573013658927&text="><img class="left" src="images/wa.png" alt="whatsapp" target='_blank'>+57 301 365 8927</a></p>
+    <p><a href="https://api.whatsapp.com/send?phone=573202093804&text="><img class="left" src="images/wa.png" alt="whatsapp" target='_blank'>+57 320 209 3804</a></p>
+
+     <img class="net" src="images/social_networks.svg" alt="networks">
+    
+  </section>
+
+  <img class="footer-img" src="images/footer.jpg" alt="footer">
+
+  <footer>
+    <img src="images/logo_white.png">
+    <p>eligetucarreraco@gmail.com</p>
+  </footer>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      // Scroll animation
+      $(".scroll").click(function(event){
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top - 100}, 800);
+      });
+
+    });
+  </script>
+
 
 </body>
 </html>

@@ -8,7 +8,7 @@
 .button-base {
   @include transition(all 0.5s ease-out 0s);
   display: inline-block;
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 10px 15px;
   text-align: center;
   line-height: 1.6;
@@ -46,6 +46,16 @@ input[type="submit"] {
 .button-primary {
   @extend .button-base;
   @include button-base-properties($primary-normal-purple);
+
+  &.blue {
+    background-color: $primary-normal-blue;
+    border-color: $primary-normal-blue;
+  }
+
+  &.pro {
+    background-color: #F2C94C;;
+    border-color: #F2C94C;;
+  }
 }
 
 // Button Primary Flat
@@ -60,4 +70,6 @@ input[type="submit"] {
     color: $primary-dark-blue;
   }
 }
+
+
 

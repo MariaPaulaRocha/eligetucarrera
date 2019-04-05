@@ -70,6 +70,13 @@
 		width: calc(33% - 20px);
 		margin-right: 20px;
 
+		min-height: 380px;
+    	vertical-align: top;
+
+    	display: inline-flex;
+    	flex-direction: column;
+    	@include justify-content(space-between);
+
 		h4 {
 			font-style: normal;
 			font-weight: normal;
@@ -78,7 +85,11 @@
 			text-align: center;
 
 			position: relative;
+
 			margin: 0px;
+
+			margin-bottom: 30px;
+
 
 			&:after {
 				position: absolute;
@@ -112,20 +123,27 @@
 		p {
 			max-width: 100%;
 			width: 100%;
+			font-size: 14px;
+			margin: 0;
+		}
 
+		p.description {
+			color: #000000;
 		}
 
 		ul	{
-			padding-top: 15px; 
+			padding-top: 15px;
+			margin-top: 0;
 			li {
 				max-width: 100%;
 				width: 100%;
 				p {
-					font-size: 14px;
+					
 					line-height: 20px;
 					color: #4C525A;
 					max-width: 100%;
 					width: 100%;
+					margin-bottom: 10px; 
 				}
 
 			}
@@ -133,6 +151,18 @@
 
 		&:last-of-type {
 			margin-right: 0px;
+
+			ul {
+				padding-top: 10px; 
+			}
+		}
+
+		a {
+			display: block;
+			width: 110px;
+			margin: 0 auto;
+  			padding: 7px 7px;
+  			margin-top: 30px;
 		}
 	}
 

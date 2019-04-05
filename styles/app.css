@@ -23,6 +23,9 @@ body {
   min-height: 100%;
   font-size: 16px; }
 
+*, *:before, *:after {
+  box-sizing: inherit; }
+
 input,
 select,
 textarea {
@@ -525,7 +528,7 @@ input[type="submit"], .button-primary, .button-primary-flat {
   -o-transition: all 0.5s ease-out 0s;
   transition: all 0.5s ease-out 0s;
   display: inline-block;
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 10px 15px;
   text-align: center;
   line-height: 1.6;
@@ -548,6 +551,12 @@ input[type="submit"], .button-primary, .button-primary-flat {
 .button-primary {
   border: 1px solid #C04BAB;
   background-color: #C04BAB; }
+  .button-primary.blue {
+    background-color: #78BDD3;
+    border-color: #78BDD3; }
+  .button-primary.pro {
+    background-color: #F2C94C;
+    border-color: #F2C94C; }
 
 .button-primary-flat {
   color: #509FB8;
@@ -630,7 +639,8 @@ p.big {
     margin-right: 50px; }
 
 .prices {
-  padding: 80px 60px; }
+  padding: 80px 60px;
+  position: relative; }
   .prices h2 {
     font-style: normal;
     font-weight: normal;
@@ -644,6 +654,76 @@ p.big {
     line-height: 32px;
     color: #23262A;
     width: 633px; }
+  .prices:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #C2EBED;
+    width: 100%;
+    z-index: -1;
+    height: 250px; }
+
+#contact {
+  padding: 50px 50px 70px;
+  text-align: center; }
+  #contact h5 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: normal;
+    color: #000000;
+    margin-bottom: 60px;
+    position: relative; }
+    #contact h5:after {
+      position: absolute;
+      content: '';
+      width: 6%;
+      border: 1px solid #C04BAB;
+      left: 47%;
+      bottom: -10px; }
+  #contact p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: normal;
+    color: #000000; }
+    #contact p a {
+      font-size: 20px;
+      font-weight: normal; }
+      #contact p a img {
+        max-width: 30px;
+        width: 30px;
+        vertical-align: middle;
+        margin-top: -3px; }
+  #contact img.net {
+    margin-top: 50px;
+    max-width: 350px; }
+
+.footer-img {
+  max-width: 100%; }
+
+footer {
+  height: 213px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  background-color: #4C525A;
+  padding: 0 60px;
+  color: #fff; }
 
 /*###########################################################################
 # BOXES
@@ -704,7 +784,16 @@ p.big {
     padding: 20px;
     display: inline-block;
     width: calc(33% - 20px);
-    margin-right: 20px; }
+    margin-right: 20px;
+    min-height: 380px;
+    vertical-align: top;
+    display: inline-flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between; }
     .price-boxes .price-box h4 {
       font-style: normal;
       font-weight: normal;
@@ -712,7 +801,8 @@ p.big {
       line-height: normal;
       text-align: center;
       position: relative;
-      margin: 0px; }
+      margin: 0px;
+      margin-bottom: 30px; }
       .price-boxes .price-box h4:after {
         position: absolute;
         content: '';
@@ -730,19 +820,32 @@ p.big {
           border: 1px solid #F2C94C; }
     .price-boxes .price-box p {
       max-width: 100%;
-      width: 100%; }
+      width: 100%;
+      font-size: 14px;
+      margin: 0; }
+    .price-boxes .price-box p.description {
+      color: #000000; }
     .price-boxes .price-box ul {
-      padding-top: 15px; }
+      padding-top: 15px;
+      margin-top: 0; }
       .price-boxes .price-box ul li {
         max-width: 100%;
         width: 100%; }
         .price-boxes .price-box ul li p {
-          font-size: 14px;
           line-height: 20px;
           color: #4C525A;
           max-width: 100%;
-          width: 100%; }
+          width: 100%;
+          margin-bottom: 10px; }
     .price-boxes .price-box:last-of-type {
       margin-right: 0px; }
+      .price-boxes .price-box:last-of-type ul {
+        padding-top: 10px; }
+    .price-boxes .price-box a {
+      display: block;
+      width: 110px;
+      margin: 0 auto;
+      padding: 7px 7px;
+      margin-top: 30px; }
 
 /*# sourceMappingURL=app.css.map */
